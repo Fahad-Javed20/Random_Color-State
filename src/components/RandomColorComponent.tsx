@@ -4,17 +4,7 @@ const RandomColorComponent = () => {
   const [color, setColor] = useState("gray");
 
   const getRandomColor = () => {
-    const colors = [
-      "orange",
-      "cyan",
-      "red",
-      "blue",
-      "green",
-      "purple",
-      "brown",
-      "yellow",
-      "pink",
-    ];
+    const colors = ["orange","cyan","red","blue","green","purple","brown","yellow","pink",];
     const randomIndex = Math.floor(Math.random() * colors.length);
     setColor(colors[randomIndex]);
   };
@@ -23,8 +13,8 @@ const RandomColorComponent = () => {
     <div className="flex justify-center min-h-screen">
       <div
         className="h-64 w-96 flex flex-col mx-auto text-black rounded-xl p-4"
-        style={{ backgroundColor: color }}
-      >
+        style={{ backgroundColor: color }}>
+            
         <p className="mt-2 text-center">
           Enter Color (allowed: red, green, blue, orange, pink, brown, purple,
           yellow, cyan)
